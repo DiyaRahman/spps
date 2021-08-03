@@ -1,0 +1,264 @@
+:root{
+      --yellow:#f9ca24;
+}
+*{
+      font-size: 'Nunito', sans-serif;
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none; border: none;
+      text-transform: capitalize;
+      transition: all .2s linear;
+      
+}
+html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+      width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+      background:#fff;
+}
+html::-webkit-scrollbar-thumb{
+      background: var(--yellow);
+
+}
+body{
+      background: white;
+      overflow-x: hidden;
+      padding-left: 35rem;
+}
+section{
+      min-height: 100vh;
+      padding: 1rem;
+}
+.heading{
+      text-align: center;
+      margin: 0 6rem;
+      font-size: 4rem;
+      padding: 1rem;
+      border-bottom: .1rem solid black;
+      color:#000;
+}
+header{
+      position: fixed;
+      top: 0; left: 0;
+      z-index: 1000;
+      height: 100%;
+      width: 35rem;
+      background:white;
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-flow: column;
+      text-align:left;
+      
+}
+
+header .user img{
+      height: 17rem;
+      width: 17rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      margin-left: 8rem;
+      border: .7rem solid ;
+}
+header .user .name{
+      font-size: 3.5rem;
+      color: black;
+      margin-left:6rem; ;
+
+}
+header.navbar{
+      width: 300px;
+     
+      
+}
+header.navbar ul{
+      list-style: none;
+      padding: 1rem 3rem;
+}
+header.navbar ul li a{
+      display: block;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      background:#fff;
+      color: #000;
+      font-size: 2rem;
+      
+     
+      
+}
+
+.aboutme{
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      
+      width:98%;
+      text-align: left;
+      
+
+}
+
+.aboutme h1{
+      
+      color: #000;
+}
+.aboutme h3{
+      font-size: 2rem;
+      color: #000;
+}
+.aboutme p{
+      font-size: 2rem;
+      color: #000;
+     
+}
+
+.project{
+      width: 100%;
+      justify-content: center;
+}
+.project .box-container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      padding-left: 2rem;
+}
+.project .box-container .box{
+      width: 27rem;
+      margin: 4rem 1rem;
+      padding-left: 4rem;
+      border-left: .2rem solid #000;
+      position: relative;
+      
+}
+.project .box-container .box span{
+      font-size: 1.3rem;
+      background: #fff;
+      color:#000;
+      border-radius: 5rem;
+      padding: 5rem 2.5rem;
+
+}
+.project .box-container .box h3{
+      font-size: 2rem;
+      color: #000;
+      padding-top: 1.5rem;    
+}
+.project .box-container .box p{
+      font-size: 1.4rem;
+      color: #000;
+      padding: 1rem 0;
+}
+.project .box-container .box i{
+      position: absolute;
+      top: -1.5rem; left: -2.5rem;
+      height: 3rem;
+      width: 3rem;
+      text-align: center;
+      font-size: 2rem;
+      color: #000;
+      background:var(--yellow) ;
+}
+.skills{
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+     
+}
+
+.contact{
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      padding: 0;
+}
+.contact .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+.contact .row .content{
+      flex: 1 1 0rem;
+      padding: 4rem;
+      padding-bottom: 0;
+}
+.contact .row .content h3{
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      color: #000;
+      padding: 1rem 0;
+      font-weight: normal;
+}
+
+/*added new new new new modified*/
+
+.navbar ul li{
+     display: block;
+      text-align: center;
+      padding:10px;
+      font-size: 20px;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-left: 10rem;
+      margin-top: 4px;
+      width: 11rem;
+     
+
+}
+.navbar ul li:hover{
+      
+       background-color: #db65d7;
+      
+ 
+ }
+
+.container{
+      
+      border-radius:10px ;
+      
+      width: 95%
+     
+
+}
+#file{
+      width: 100%;
+}
+/* Make sure that padding behaves as expected */
+
+
+/* Container for skill bars */
+.skill-container {
+  width: 50%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  border-radius: 10px;
+}
+
+.skills {
+  text-align: right;/* Right-align text */
+  font-size: larger;
+  font-weight: 700;
+  padding-top: 15px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: rgb(255, 255, 255); /* White text color */
+  border-radius: 10px;
+}
+.skills p{
+      color: rgb(0, 0, 0); 
+      text-align: left;
+      font-size: 20px;
+      padding: auto;
+}
+
+.html {width: 50%; background-color: #db65d7;} /* Green */
+.css {width: 60%; background-color: #db65d7;} /* Blue */
+.js {width: 75%; background-color: #db65d7;} /* Red */
+.php {width: 30%; background-color: #db65d7;} /* Dark Grey */
